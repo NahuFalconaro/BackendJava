@@ -40,19 +40,7 @@ public class Controller {
     public Persona getPersonas(@PathVariable Long id){
         return this.interPersona.findPersona(id);
     }
-//    @PostMapping("/personas/crear")
-//    public String createStudent(@RequestBody Persona p){
-//        System.out.println(p);
-//        this.interPersona.savePersona(p);
-//        return "La persona fue creada correctamente";
-//    }
-//    @DeleteMapping("/personas/borrar/{id}")
-//    public String deletePersona(@PathVariable Long id){
-//        this.interPersona.deletePersona(id);
-//        return "Persona eliminada correctamente";
-//    }
     
-
     @PutMapping("/persona/editar/{id}")
     public Persona editPersona(@PathVariable Long id,
                                 @RequestBody Persona per){

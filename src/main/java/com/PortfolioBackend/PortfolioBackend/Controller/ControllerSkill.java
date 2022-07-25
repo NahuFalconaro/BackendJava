@@ -40,12 +40,12 @@ public class ControllerSkill {
         return interSkill.getSkillByAttr(nombre, valor);
     }
     @GetMapping("/skill/{id}")
-    public Skill getPersonas(@PathVariable Long id){
+    public Skill getSkillById(@PathVariable Long id){
         return this.interSkill.findSkill(id);
     }
     
     @PutMapping("/skill/editar/{id}")
-    public Skill editPersona(@PathVariable Long id,
+    public Skill editSkill(@PathVariable Long id,
                                 @RequestBody Skill sk){
         
         Skill p = this.interSkill.findSkill(id);
